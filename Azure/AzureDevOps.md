@@ -10,3 +10,5 @@ Create Keys:
 ```bash
 ssh-keygen -t rsa -C "your_email@example.com"
 ```
+
+## Create artifacts

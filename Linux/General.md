@@ -96,6 +96,12 @@ Add your line (Sample runs every hour)
 0 * * * * /usr/bin/python3 /home/pi/test.py >/dev/null 2>&1
 ```
 
+Check cron status/start/stop
+
+```bash
+/etc/init.d/cron status
+```
+
 ## Rsync
 
 Recursive & preserve, zip, progress
