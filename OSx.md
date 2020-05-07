@@ -19,3 +19,9 @@ Check rules
 ```zsh
 sudo dnctl list
 ```
+
+Enable allow from anyware
+
+```zsh
+sudo spctl --master-disable
+```
