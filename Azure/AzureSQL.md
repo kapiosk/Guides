@@ -1,6 +1,6 @@
-#Misc
+# Misc
 
-##SQLPackage
+## SQLPackage
 
 Install
 
@@ -10,7 +10,7 @@ Backup
 
 sqlpackage /SourceConnectionString:"Server=tcp:{server}.database.windows.net,1433;Initial Catalog={database};Persist Security Info=False;User ID={username};Password={password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" /Action:Export /TargetFile:t.bacpac
 
-##sqlcmd & bcp
+## sqlcmd & bcp
 
 Install
 
