@@ -1,5 +1,47 @@
 # Git
 
+## Github
+
+Install
+
+```bash
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install git
+```
+
+Config
+
+```bash
+git config --global user.name "Your name here"
+git config --global user.email "your_email@example.com"
+```
+
+Create Keys
+
+```bash
+ssh-keygen -t rsa -C "your_email@example.com"
+```
+
+Copy Public Key
+
+```bash
+more ~/.ssh/id_rsa.pub
+```
+
+Go to your [SSH keys in Account settings](https://github.com/settings/keys) and add the new key
+
+Check config by using
+
+```bash
+ssh -T git@github.com
+```
+
+Set origin for local project
+
+```bash
+git remote add origin samplepath:sample.git
+```
+
 ## Advanced
 
 Pushing to multiple Git repos
