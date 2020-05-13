@@ -25,9 +25,3 @@ Set Active Subscription
 ```bash
 az account set -s "SubNameOrId"
 ```
-
-```bash
-az group list
-az group show --name "ResourceGroupName"
-az group export --name "ResourceGroupName"
-```
