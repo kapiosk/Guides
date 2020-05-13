@@ -8,6 +8,12 @@ All for owner, group, other
 chmod 777 foldername
 ```
 
+Make executable for all
+
+```bash
+chmod a+x filename
+```
+
 ## Backup
 
 ```bash
