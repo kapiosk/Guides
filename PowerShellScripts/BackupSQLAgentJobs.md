@@ -16,7 +16,7 @@ $ServerConnection.ConnectionString = $ConnectionString
 
 $srv = New-Object Microsoft.SqlServer.Management.Smo.Server($ServerConnection)
 
-$singleFile = $True
+$singleFile = $TRUE
 if ($singleFile) {
     $srv.JobServer.Jobs | ForEach-Object {$_.Script() + "GO`r`n"} | Out-File ".\$OutputFolder\jobs.sql"
 } else {
