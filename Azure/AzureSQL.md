@@ -15,7 +15,7 @@ sqlpackage /Action:Export /TargetFile:"{fileName}" /SourceConnectionString:"Serv
 Restore (Powershell Example)
 
 ```powershell
-.\SqlPackage.exe /a:Import /sf:"{fileName}" /tsn:"{databaseInstance}" /tdn:$db /tu:"{username}" /tp:"{password}"
+.\SqlPackage.exe /a:Import /sf:"{fileName}" /tsn:"{SQLInstance}" /tdn:"{database}" /tu:"{username}" /tp:"{password}"
 ```
 
 ## sqlcmd & bcp
