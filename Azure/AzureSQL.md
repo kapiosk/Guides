@@ -6,10 +6,16 @@ Install
 
 <https://docs.microsoft.com/en-us/sql/tools/sqlpackage-download?view=sql-server-ver15>
 
-Backup
+Backup (Linux Example)
 
 ```bash
-sqlpackage /SourceConnectionString:"Server=tcp:{server}.database.windows.net,1433;Initial Catalog={database};Persist Security Info=False;User ID={username};Password={password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" /Action:Export /TargetFile:t.bacpac
+sqlpackage /Action:Export /TargetFile:"{fileName}" /SourceConnectionString:"Server=tcp:{server}.database.windows.net,1433;Initial Catalog={database};Persist Security Info=False;User ID={username};Password={password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+```
+
+Restore (Powershell Example)
+
+```powershell
+.\SqlPackage.exe /a:Import /sf:"{fileName}" /tsn:"{databaseInstance}" /tdn:$db /tu:"{username}" /tp:"{password}"
 ```
 
 ## sqlcmd & bcp
