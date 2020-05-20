@@ -14,6 +14,45 @@ Make executable for all
 chmod a+x filename
 ```
 
+Change ownership and give full permissions to owner & group
+
+```bash
+chown -R www-data ./
+chmod -R 770 ./
+```
+
+Turn superuser
+
+```bash
+sudo -i
+```
+
+### Change mount permissions
+
+Find user
+
+```bash
+more /etc/passwd
+```
+
+Find group
+
+```bash
+/etc/group
+```
+
+Edit fstab
+
+```bash
+nano /etc/fstab
+```
+
+Add/Edit appropriate
+
+```bash
+uid=1001,gid=33,
+```
+
 ## Backup
 
 ```bash
