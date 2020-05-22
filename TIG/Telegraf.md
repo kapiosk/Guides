@@ -43,7 +43,6 @@ sudo nano telegraf.conf
   flush_interval = "15s"
   interval = "15s"
 
-
 # Input Plugins
 [[inputs.cpu]]
     percpu = true
@@ -67,7 +66,7 @@ sudo nano telegraf.conf
   urls = [ "<URL or IP>:8086" ]
   username = "<username>"
   password = "<password>"
-  ```
+```
 
 Save and exit.
 
