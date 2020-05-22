@@ -5,6 +5,7 @@ Install the telegraf package
 ```bash
 sudo apt install telegraf -y
 ```
+
 After the installation is complete, start the telegraf service and enable it to launch everytime at system startup.
 
 ```bash
