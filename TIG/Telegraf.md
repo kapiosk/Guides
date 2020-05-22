@@ -6,7 +6,7 @@ Install the telegraf package
 sudo apt install telegraf -y
 ```
 
-After the installation is complete, start the telegraf service and enable it to launch everytime at system startup.
+After the installation is complete, start the telegraf service and enable it to launch every time at system startup.
 
 ```bash
 sudo systemctl start telegraf
@@ -34,7 +34,7 @@ Now create a new other configuration 'telegraf.conf'
 sudo nano telegraf.conf
 ```
 
-## Sample configuation for Linux Client
+## Sample configuration for Linux Client
 
 ```plaintext
 # Global Agent Configuration
