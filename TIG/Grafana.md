@@ -14,7 +14,7 @@ sudo apt update
 sudo apt install grafana -y
 ```
 
-After the installation is complete, start the grafana service and enable it to launch everytime at system boot.
+After the installation is complete, start the grafana service and enable it to launch every time at system boot.
 
 ```bash
 sudo systemctl start grafana-server
