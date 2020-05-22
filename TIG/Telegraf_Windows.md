@@ -128,9 +128,9 @@ Test Telegraf configuration to check if it works correctly.
 .\telegraf --config 'C:\Program Files\telegraf\telegraf.conf' --test
 ```
 
-If the agent works as it should we can now set it up as a system service. 
+If the agent works as it should we can now set it up as a system service.
 
-## *IMPORTANT* When setting up the service the FULL configuration file path must be specified.
+## *IMPORTANT* When setting up the service the FULL configuration file path must be specified
 
 ```powershell
 .\telegraf --service install --config 'C:\Program Files\telegraf\telegraf.conf'
