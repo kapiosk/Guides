@@ -72,3 +72,9 @@ Reboot
 ```bash
 sudo reboow now
 ```
+
+## Resolution config
+
+```bash
+sudo nano /etc/resolv.conf
+```
