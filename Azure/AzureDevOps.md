@@ -12,3 +12,33 @@ ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
 ## Create artifacts
+
+### Automatic versioning for .Net Standard
+
+Use dotnet pack
+
+In project file
+
+```xml
+  <PropertyGroup>
+    <Deterministic>false</Deterministic>
+    <Version>1.0.$([System.DateTime]::UtcNow.Date.Subtract($([System.DateTime]::Parse("2000-01-01"))).TotalDays)</Version>
+  </PropertyGroup>
+```
+
+### Automatic versioning for .Net Framework
+
+Use Nuget pack
+
+In project file
+
+```xml
+<Deterministic>false</Deterministic>
+```
+
+In AssemblyInfo.vb
+
+```vba
+<Assembly: AssemblyVersion("1.0.*")>
+<Assembly: AssemblyFileVersion("1.0")>
+```
