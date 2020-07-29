@@ -75,3 +75,21 @@ Extract folder
 ```bash
 tar xvzf files.tar.gz
 ```
+
+Init certbot for nginx
+
+```bash
+sudo certbot --nginx
+```
+
+Renew certificates
+
+```bash
+sudo certbot renew
+```
+
+Edit cronjobs
+
+```bash
+crontab -e
+```
