@@ -24,6 +24,12 @@ Dump requirements
 pip freeze > requirementsDefault.txt
 ```
 
+Install requirements
+
+```bash
+pip install -r requirementsDefault.txt
+```
+
 Sample header
 
 ```python
