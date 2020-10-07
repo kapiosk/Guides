@@ -13,7 +13,7 @@ ssh-keygen -t rsa -C "your_email@example.com"
 
 ## Create artifacts
 
-### Automatic versioning for .Net Standard
+### Automatic versioning for .Net Standard / dotnetcore
 
 Use dotnet pack
 
@@ -22,7 +22,7 @@ In project file
 ```xml
   <PropertyGroup>
     <Deterministic>false</Deterministic>
-    <Version>1.0.$([System.DateTime]::UtcNow.Date.Subtract($([System.DateTime]::Parse("2000-01-01"))).TotalDays)</Version>
+    <Version>1.$([System.DateTime]::UtcNow.Date.Subtract($([System.DateTime]::Parse("2000-01-01"))).TotalDays).$([System.DateTime]::UtcNow.Hour)</Version>
   </PropertyGroup>
 ```
 
