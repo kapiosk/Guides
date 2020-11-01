@@ -36,7 +36,7 @@ auth_algs=1
 ignore_broadcast_ssid=0
 wpa=2
 wpa_passphrase=mypassphrase
-wpa_key_mgmt=WPA-PSK
+wpa_key_mgmt=WPA-EAP-SHA256
 wpa_pairwise=TKIP
 rsn_pairwise=CCMP
 ```
