@@ -24,6 +24,7 @@ sudo brctl addbr br0
 Create file __/etc/hostapd/hostapd.conf__ and add:
 
 ```plaintext
+#https://w1.fi/cgit/hostap/plain/hostapd/hostapd.conf
 interface=wlan0
 bridge=br0
 #driver=nl80211
