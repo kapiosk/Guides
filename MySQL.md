@@ -18,7 +18,7 @@ Start/create
 ```sql
 CREATE USER '{user}'@'localhost' IDENTIFIED BY '{password}';
 CREATE DATABASE {database};
-GRANT ALL PRIVILEGES ON {database}.* TO '{user}'@'localhost' IDENTIFIED BY '{password}' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON {database}.* TO '{user}'@'%' IDENTIFIED BY '{password}' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 
