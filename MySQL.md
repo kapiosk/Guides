@@ -6,12 +6,19 @@ Configure
 sudo mysql_secure_installation utility
 ```
 
+Unbind localhost only, comment out bind-address = 127.0.0.1
+
+```bash
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo systemctl restart mysql
+```
+
 Start/create
 
 ```sql
 CREATE USER '{user}'@'localhost' IDENTIFIED BY '{password}';
 CREATE DATABASE {database};
-GRANT ALL PRIVILEGES ON {database}.* TO '{user}'@'localhost' IDENTIFIED BY '{password}';
+GRANT ALL PRIVILEGES ON {database}.* TO '{user}'@'localhost' IDENTIFIED BY '{password}' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 
