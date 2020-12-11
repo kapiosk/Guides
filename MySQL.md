@@ -39,3 +39,9 @@ Backup all
 ```bash
 mysqldump --all-databases --single-transaction --quick --lock-tables=false > full-backup-$(date +%F).sql -h {url} -u {user} -p
 ```
+
+Restore single
+
+```bash
+mysql -h {host} -u {user} -p {database} < {filename}
+```
