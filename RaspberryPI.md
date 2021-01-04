@@ -22,3 +22,11 @@ elif match.group(1) == 'BCM2711':
         # Pi 4
         return 3
 ```
+
+## Lost sound on Raspberry OS upgrade
+
+```bash
+sudo rm .asoundrc
+sudo raspi-config
+sudo reboot now
+```
