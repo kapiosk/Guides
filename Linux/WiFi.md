@@ -24,6 +24,7 @@ sudo brctl addbr br0
 Create file __/etc/hostapd/hostapd.conf__ and add:
 
 ```plaintext
+#https://w1.fi/cgit/hostap/plain/hostapd/hostapd.conf
 interface=wlan0
 bridge=br0
 #driver=nl80211
@@ -36,7 +37,7 @@ auth_algs=1
 ignore_broadcast_ssid=0
 wpa=2
 wpa_passphrase=mypassphrase
-wpa_key_mgmt=WPA-PSK
+wpa_key_mgmt=WPA-PSK-SHA256
 wpa_pairwise=TKIP
 rsn_pairwise=CCMP
 ```
