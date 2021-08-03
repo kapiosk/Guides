@@ -57,14 +57,14 @@ git remote set-url --add --push cake git@github.com:Potato.git
 git push cake
 ```
 
+__Please note that you cannot pull from multiple repos!!!__
+
 Change email
 
 ```bash
 git config --global user.email {ID}+{username}@users.noreply.github.com
 git commit --amend --reset-author
 ```
-
-__Please note that you cannot pull from multiple repos!!!__
 
 ## Windows
 
