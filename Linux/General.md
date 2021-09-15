@@ -112,3 +112,9 @@ Recursive & preserve, zip, progress
 ```bash
 rsync -azP ~/dir1 username@remote_host:destination_directory
 ```
+
+## Extend Partition after VM disk resize
+
+```bash
+sudo parted -l
+```
